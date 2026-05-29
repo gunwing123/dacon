@@ -1,0 +1,19 @@
+# Local data and generated submissions
+physical/
+*.csv
+*.zip
+*.mp4
+*.avi
+*.mov
+
+# Model artifacts
+*.pt
+*.pth
+*.ckpt
+
+# Jupyter/Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
