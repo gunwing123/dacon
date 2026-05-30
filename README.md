@@ -4,9 +4,9 @@ DACON 이미지 기반 물체 안정성 분류 실험 저장소입니다. top/fr
 
 ## Repository Contents
 
-- `main.ipynb`: 이미지 데이터 로딩, augmentation, two-view 모델 학습, 제출 파일 생성
-- `use_videodata.ipynb`: 비디오/프레임 데이터를 활용한 추가 실험
-- `requirements.txt`: 노트북 실행에 필요한 주요 Python 패키지
+- `main.py`: 이미지 데이터 로딩, augmentation, two-view 모델 학습, 제출 파일 생성
+- `use_videodata.py`: 비디오/프레임 데이터를 활용한 추가 실험
+- `requirements.txt`: 스크립트 실행에 필요한 주요 Python 패키지
 
 ## Data
 
@@ -45,18 +45,18 @@ daicon/
 pip install -r requirements.txt
 ```
 
-2. 학습 노트북 실행
+2. 학습 스크립트 실행
 
 ```bash
-jupyter lab main.ipynb
+python main.py
 ```
 
 3. 제출 파일 생성
 
-노트북 마지막 inference 셀을 실행하면 로컬에 제출 CSV가 생성됩니다.
+스크립트의 inference 구간을 실행하면 로컬에 제출 CSV가 생성됩니다.
 
 ## Notes
 
-- 노트북은 CUDA 환경을 기준으로 작성되어 있습니다.
+- 스크립트는 CUDA 환경을 기준으로 작성되어 있습니다.
 - augmentation에는 Albumentations를 사용합니다.
 - 현재 로컬 파일명에는 `submisson.csv`처럼 오타가 있는 제출 파일이 포함되어 있지만, git에는 제외됩니다.
